@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/shaun/Desktop/quotesTable/quotes2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>give-a-quotes-booking-area</title>
+	<link href="./give-a-quotes-booking-area_files/css" rel="stylesheet">
+	<script href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<style>
+
+/*
+#ffec64
+#ddd
+#777
+*/
+* {
+  box-sizing: border-box;
+}
+/*  add-custom-css-styles-to-contact-form    */
+form {
+	display: flex;
+	flex-direction: row
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: space-between;
+	margin: 0 auto
+	 margin-top:30px;
+
+	  padding:0;
+		 padding-left:45px;
+		 padding-bottom:30px;
+		 font-family:sans-serif;
+		 margin 0 auto;
+     padding: 0, 0, 0, 3px;
+     width: 95%;
+     -moz-box-shadow: 0px 10px 14px -7px #fff6af;
+     -webkit-box-shadow: 0px 10px 14px -7px #fff6af;
+     box-shadow: 0px 10px 14px -7px #fff6af;
+     border-collapse:separate;
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+     background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+     background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+     background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+     background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+     background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+     background-color: #ffec64;
+     -moz-border-radius: 4px;
+     -webkit-border-radius: 4px;
+     border-radius: 4px;
+     border: 1px solid #ffaa22;
+     display: inline-block;
+     cursor: pointer;
+     color: #333333;
+     font-family: arial;
+     font-size: 18px;
+     font-weight: bold;
+     padding: 6px 12px;
+     text-align: center;
+     text-shadow: 0px 1px 0px #ffee66
+	},
+input[type=checkbox] {
+					display: flex;
+					flex-direction: row
+					align-content:stretch ;
+				   cursor: pointer;
+					   display: inline-block;
+						 width: 0,auto;
+	    }
+	    input[type=checkbox]:before {
+	         content: "";
+					 width: 100px;
+				  padding: 15px 15px;
+				  margin: 8px 0;
+				  display: inline-block;
+					height: 20px;
+					border: 1px solid #ccc;
+					 border-radius: 4px;
+					 box-sizing: border-box;
+	        background-color:#e9e9e9;
+	}
+	input[type=checkbox]:checked:before {
+	         content: "1";
+	         display: inline-block;
+						width: 20px;
+	         height: 20px;
+	         background-color:#eee214;
+	}
+	    input[type=checkbox]:checked:after {
+	         content: "";
+	         display:  inline-block;
+	         width: 20px;
+	         height: 10px;
+	         /*border: solid white;*/
+	        	 border: 1px solid #ccc;
+						border-radius: 4px;
+						box-sizing: border-box;
+
+}
+
+
+form-control submit {
+    margin 0 auto;
+    padding: 0, 0, 0, 3px;
+    width: 55%;
+    -moz-box-shadow: 0px 10px 14px -7px #fff6af;
+    -webkit-box-shadow: 0px 10px 14px -7px #fff6af;
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    border-collapse:separate;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+    background-color: #ffec64;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-align: center;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+form-control submit:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
+    background-color: #ffab23;
+}
+
+form-control submit:active {
+    position: relative;
+    top: 1px;
+}
+
+form {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ffec64;
+    color: #000;
+    font-size: 10;
+    font-family: ;
+    font-style: normal;
+    font-weight: ;
+    padding: 1px;
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+    background: #fefcea;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefcea), color-stop(100%, #f1da36));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #fefcea 0%, #f1da36 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36', GradientType=0);
+    /* IE6-9*/
+}
+
+ .safesend {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4px;
+    margin: 0 auto
+}
+
+.phoneNunber {
+    width: 50%;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+    /*text-shadow: 1px 1px 1px rgba(0,0.,0,0.3);*/
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+
+ select {
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+
+.QuoteButton {
+    width: 100%;
+    -moz-box-shadow: 0px 10px 14px -7px #fff6af;
+    -webkit-box-shadow: 0px 10px 14px -7px #fff6af;
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+    background-color: #ffec64;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+.QuoteButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
+    background-color: #ffab23;
+}
+
+.QuoteButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+ input[type="text"],
+ input[type="email"],
+input[type="tel"],
+ input [type="radio"],
+ input [type="checkbox"],
+ select [type="select"],
+ textarea {
+    width: 100%;
+		display: flex;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+
+#container{
+	display: flex;
+	flex-direction: row
+	justify-content:space-between,flex-start;
+	/* for Dbuging*/
+	border: 1px solid #000;
+}
+
+.container{
+		display: flex;
+		flex-direction: row
+		justify-content:space-between,flex-start;
+		flex-wrap:  wrap ;
+		width:auto;
+		align-content: baseline ;
+		 align-items: stretch,center ;
+		 font-family: 'Open Sans Condensed', ;
+}
+
+.booking-area .booking-wrap {
+		display: flex;
+		justify-content:space-between;
+		padding: 39px 50px 20px 50px;
+		display:  inline-block;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 79px 0px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap
+		font-family: 'Open Sans Condensed', ;
+table td {
+width: 100%;
+border-collapse: collapse;
+  padding: 30px;
+}
+}
+		.booking-area .booking-wrap {
+			display: flex;
+			justify-content:space-between;
+		    padding: 39px 80px 20px 80px;
+		    background: #fff;
+		    border-radius: 10px;
+		    box-shadow: 0px 8px 79px 0px rgba(0, 0, 0, 0.08);
+		    flex-wrap: wrap; }
+		    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+		      .booking-area .booking-wrap {
+		        padding: 34px 46px 20px 42px; } }
+		    @media only screen and (min-width: 576px) and (max-width: 767px) {
+		      .booking-area .booking-wrap {
+		      	flex-wrap: wrap;
+		        padding: 49px 15px 20px 20px; } }
+		    @media (max-width: 767px) {
+		      .booking-area .booking-wrap {
+		        padding: 40px 26px 3px 54px; } }
+		    @media only screen and (min-width: 768px) and (max-width: 991px) {
+		      .booking-area .booking-wrap {
+		        flex-wrap: wrap; } }
+		    @media only screen and (min-width: 576px) and (max-width: 767px) {
+		      .booking-area .booking-wrap {
+		        flex-wrap: wrap; } }
+		    @media (max-width: 767px) {
+		      .booking-area .booking-wrap {
+		        flex-wrap: wrap; } }
+		    @media only screen and (min-width: 768px) and (max-width: 991px) {
+		      .booking-area .booking-wrap .single-select-box {
+		      	flex-wrap: wrap;
+		        width: 50%; } }
+		    @media only screen and (min-width: 576px) and (max-width: 767px) {
+		      .booking-area .booking-wrap .single-select-box {
+		      	flex-wrap: wrap;
+		        width: 100%; } }
+		    @media (max-width: 767px) {
+		      .booking-area .booking-wrap .single-select-box {
+		        width: 100%;
+						flex-wrap: wrap; } }
+		    @media only screen and (min-width: 576px) and (max-width: 767px) {
+		      .booking-area .booking-wrap .single-select-box {
+		        width: 50%;
+					flex-wrap: wrap;	} }
+		    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+		      .booking-area .booking-wrap .single-select-box {
+		        width: 50%; } }
+		    .booking-area .booking-wrap .boking-tittle span {
+		      color: #262626;
+		      font-size: 16px;
+		      margin-bottom: 20px;
+		      font-weight: 600;
+		      display: block; }
+		    .booking-area .booking-wrap .nice-select.open .list {
+		      width: 100%; }
+		    .booking-area .booking-wrap .nice-select .list {
+		      width: 100%; }
+		    @media (max-width: 767px) {
+		      .booking-area .booking-wrap .nice-select {
+		        width: 80%; } }
+		    @media only screen and (min-width: 576px) and (max-width: 767px) {
+		      .booking-area .booking-wrap .nice-select {
+		        width: 80%; } }
+		    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+		      .booking-area .booking-wrap .nice-select {
+		        width: 50%; } }
+		    @media only screen and (min-width: 768px) and (max-width: 991px) {
+		      .booking-area .booking-wrap .nice-select {
+		        width: 80%; } }
+
+		.select-btn {
+		  padding: 27px 49px; }
+		  @media (max-width: 767px) {
+		    .select-btn {
+		      width: 80%; } }
+		  @media only screen and (min-width: 576px) and (max-width: 767px) {
+		    .select-btn {
+		      width: 80%; } }
+		  @media only screen and (min-width: 768px) and (max-width: 991px) {
+		    .select-btn {
+		      width: 80%; } }
+
+		@media (max-width: 767px) {
+		  .single-select-box.pt-45 {
+		    padding-top: 0; } }
+
+		@media only screen and (min-width: 576px) and (max-width: 767px) {
+		  .single-select-box.pt-45 {
+		    padding-top: 45px; } }
+#content{
+border: 1px solid blue;
+}
+</style></head>
+
+
+
+
+<body><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main id="content">
+<div class="container" id="container">
+<form class="booking-area,booking-wrap" action="file:///C:/Users/shaun/Desktop/quotesTable/quotes2.html">
+
+	<section><div>
+    <div data-title-type="clients" id="NewClientname">Clients:Add New Client</div><output data-clientcontact-type="name"> </output>
+		<div data-title-type="clients" class="Phone" id="NewClientPhone">Phone</div><output data-clientcontact-type="Phone"></output>
+	   <div data-title-type="clients" id="NewClientAddress">Address</div><output data-clientcontact-type="Address"> </output>
+    <div data-title-type="clients" id="NewClientDate">Date</div><output> </output>
+		<div data-title-type="clients" id="NewClientEmail">Email</div><output> </output>
+  </div>
+  <div>
+		<!--/The id value [ container ] must be unique To Do/-->
+    <br><div class="container" id="container"><label for="Clients" class="fas fa-user-plus,.booking-area, .booking-wrap">Clients:Add New Client</label><br>
+		 <br><br>
+		 <span><input type="text" class="booking-area,booking-wrap " data-contact-type="clientname" id="Clients" name="ClientName" value="Client Name:John Doe" required="required"></span></div>
+		 <div class="container" id="container"><span><span><label for="Phone" class="fas fa-phone">Clients:Add New Phone</label><br><span class="phoneNunber"> <input type="tel" id="Phone" data-contact-type="cellphone" name="ClientName" value="022 9513575" required="required"></span></span></span></div>
+
+
+    <div class="container" id="container"><span class="booking-area,booking-wrap "><address class="fas fa-address-book"><label class="booking-area,booking-wrap " for="Address">Add New Client Address</label>
+		  <br><input type="text" id="Address" data-contact-type="address" name="ClientAddress" value="Client Address" required="required"></address></span></div>
+
+    <div class="container" id="container"><label for="Calendar" class="fas fa-calendar-plus .booking-area, .booking-wrap">Job Start date:</label>
+			   <br><span class="phoneNunber"><input type="date" id="Calendar" name="Date" value="2020-04-22" min="2019-12-21" max="3020-12-31"></span></div>
+
+			 <div class="container" id="container"><label class="booking-area,booking-wrap " id="" for="email"><label for="email" class="fas fa-at">Enter Clients email:</label>
+				 	<input type="email" class=".booking-area, .booking-wrap" id="email" data-contact-type="email" size="30" required="required"> email:</label></div>
+</div></section><br>
+
+	<br><section>	<div><div>Windows Cleaning nunber of room</div>
+	<br><div class="container" id="container"><label class="booking-area,booking-wrap" id="" for="Windows Cleaning ">Windows Cleaning</label>
+			 <label class="booking-area,booking-wrap " id="booking-area,  booking-wrap" "="" for="Windows Cleaning ">1</label><br>
+	<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 1 Bedroom"> </div>
+			<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning" name="Windows" value="Windows 2 Bedroom">2</label>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 2 Bedroom">
+			</div>
+			<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning">3</label><br>
+  <input type="radio" id="Windows Cleaning" name="Windows" value="Windows 3 Bedroom"> </div>
+	<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning">4</label><br>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 4 Bedroom"> </div>
+<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning ">5</label><br>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 5 Bedroom"> </div>
+<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning">6</label><br>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 6 Bedroom"> </div>
+<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning">7</label><br>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 7 Bedroom"> </div>
+</div></section>
+		<div><div>House Cleaning</div>
+			<div class="container" id="container"><label class="booking-area,booking-wrap " id="" for="House Clean">Add House Clean</label><br><br>
+				<label class="booking-area,booking-wrap " id="" for="House Clean">House Clean 2 Hours</label><br>
+   <input type="radio" id="House Clean" name="Clean" value="House Clean 2"> </div>
+			<div class="container" id="container"><label class="booking-area,booking-wrap " id="" for="House Clean">House Clean 3 Hours</label>
+			   <input type="radio" id="House Clean" name="Clean" value="House Clean 3"></div>
+			<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="House Clean">House Clean 4 Hours</label><br>
+  <input type="radio" id="House Clean" name="Clean" value="House Clean 4"></div></div>
+
+<div><div><div>Movers Clean</div></div>
+<div class="container" id="container"><label for="House Clean">Movers Clean 5 Hours</label><br>
+  <input type="checkbox" class="fa fa-check" aria-hidden="true" id="House Clean" name="Clean" value="House Clean 5"></div>
+
+			<div class="container" id="container"> <label for="House Clean">Movers Clean 8 Hours</label><br>
+  <input type="checkbox" id="House Clean" name="Clean" value="Movers Clean 8 Hours"> </div>
+
+	<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="House Clean">Movers 8 Hours + Oven</label><br>
+<input type="checkbox" id="House Clean" name="Clean" value="Movers 8 Hours + Oven"> </div>
+</div></form></div>
+		<div><div>Carpets Cleaning</div>
+		<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">1 room</label><br>
+  <input type="checkbox" id="Carpets cleaning" name="Clean" value="1 room"> </div>
+			<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning"> 2 room</label><br>
+  <input type="checkbox" id="Carpets cleaning" name="Clean" value="2 room"></div>
+			<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">3 room</label><br>
+  <input type="checkbox" id="Carpets cleaning" name="Carpets cleaning" value="3 room"></div>
+	<div class="container" id="container"><label class="booking-area,booking-wrap " id="" for="Carpets cleaning">4 room</label><br>
+<input type="checkbox" id="Carpets cleaning" name="Carpets cleaning" value="4 room"></div>
+	<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">5 room</label><br>
+<input type="checkbox" id="Carpets cleaning" name="Carpets cleaning" value="5 room"></div>
+<div><div>Carpets Cleaning</div>
+<div class="container" id="container">
+<label class="booking-area,booking-wrap " id="" for="Carpets cleaning"> 2 Seater Couch</label><br>
+<input type="checkbox" id="2 Seater Couch" name="3 Seater Couch" value="Clean"></div>
+
+<div class="container" id="container"> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning"> 3 Seater Couch</label><br>
+<input type="checkbox" id="3 Seater Couch" name="3 Seater Couch" value="Clean"></div>
+
+<div class="container" id="container"> <label for="Carpets cleaning"> 3 Seater Couch</label><br>
+<div class="container" id="container"> <label for="Carpets cleaning"> 3 Seater Couch</label><br>
+<div class="container" id="container"> <label for="Carpets cleaning">4 Seater Couch</label><br>
+<input type="checkbox" id="4 Seater Couch" name="4 Seater Couch" value="Clean"></div>
+
+	</div></div>
+		<div><div class="container" id="container"><label for="lounges">lounges</label><br>
+			<select name="lounges" id="">
+			<option value="">1</option>
+			<option value="">2</option>
+
+		</select></div>
+		<ul>
+			<li class="container" id="container"> <label for="Oven Clean">Oven Clean (Single)</label><br>
+      		<input type="checkbox" id="Clean" name="Clean" value="Clean"></li>
+			<li class="container" id="container"><label for="Oven Clean">Oven Clean (Double)</label><br>
+  				<input type="checkbox" id="Clean" name="Clean" value="Clean"></li>
+		</ul>
+		<ul>
+			<!--//Are we going to spot clean all the walls  true or false -->
+			<li class="container" id="Wall"> <label for="Wall">Wall per room</label><br>
+       <input type="radio" id="spotcleanwall " name="Clean" value="spotcleanwall"></li>
+			<li class="container"><!--  //The number of rooms to be done -->
+					<label for="Wall">full clean all Wall </label><br>
+			<input type="radio" id="Wall" name="Clean" value="fullClean"></li>
+		</ul>
+
+				<!--  //The number of rooms to be done -->
+  <input type="checkbox" id="Wall per room" name="Clean" value="Clean">
+		<select name="" id="" min="1" max="8">
+			<option value="one rooms">1</option>
+		  <option value="two rooms">2</option>
+		  <option value="three rooms">3</option>
+		  <option value="four rooms">4</option>
+			 <option value="four rooms">5</option>
+			  <option value="four rooms">6</option>
+				 <option value="four rooms">7</option>
+				  <option value="four rooms">8</option>
+		</select></div>
+			<div class="container" id="container"><div class="container" id="container"> <label for="Kitchen">Kitchen</label><br>
+  <input type="checkbox" id="Kitchen" name="Clean" value="1 room"> </div>
+
+
+	<div class="container" id="container"> <label for="Kitchen">Kitchens+ Wall  + one rooms</label><br>
+<input type="checkbox" id="Clean" name="Clean" value="Clean"></div>
+<div class="container" id="container"> <label for="Kitchen">Kitchens +Wall  + two rooms</label><br>
+<input type="checkbox" id="Kitchen" name="Clean" value="Clean">
+
+<select name="rooms" id="Kitchen">
+	<option value="one rooms">1</option>
+  <option value="two rooms">2</option>
+  <option value="three rooms">3</option>
+  <option value="four rooms">4</option>
+	<option value="four rooms">5</option>
+	<option value="four rooms">6</option>
+	<option value="four rooms">7</option>
+	<option value="four rooms">8</option>
+	<option value="four rooms">9</option>
+	<option value="four rooms">10</option>
+
+</select></div>
+
+		</div>
+		<div>
+		<div class="container" id="container"><p>	Extras we offer
+		NoSale:	SuperClean:
+		Carpet Shampoo	Carpet Shampoo	Pre-shampoo Vaccuum  Deoderise	All included
+
+		Vaccuum		$15 	per room
+		Stain Removal (tough stains)		$20 	per stain
+		Carpet Protector		$35 	per room	</p></div>
+		</div>
+
+
+<input class="QuoteButton" type="submit" value="Submit">
+
+<section></section></div>
+	<footer>
+		<li class=""></li>
+		<li class=""></li>
+		<li class=""></li>
+
+</footer>
+</div></main>
+
+
+
+</body></html>

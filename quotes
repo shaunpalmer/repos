@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table style="width: 50%;border-collapse: collapse;"  cellpadding = "1">
+	<tbody>
+	<label for="Clients">Clients:Add New Client</label>
+	</br>	<tr>
+			</br>
+			<td> <label for="Windows ">Add Windows 2 Bedroom</label><br>
+  <input type="checkbox" id="Windows" name="Windows 2 Bedroom" value="Windows 2 Bedroom"> </td>
+			<td> <label for="Windows"> Windows 3 Bedroom</label><br>
+  <input type="checkbox" id="Windows" name="Windows 3 Bedroom" value="Windows 3 Bedroom"> </td>
+	<td> <label for="Windows"> Windows 3 Bedroom</label><br>
+<input type="checkbox" id="Windows" name="Windows 4 Bedroom" value="Windows 4 Bedroom"> </td>
+<td> <label for="Windows ">Windows 2 Bedroom</label><br>
+<input type="checkbox" id="Windows" name="Windows 2 Bedroom" value="Windows 5 Bedroom"> </td>
+<td> <label for="Windows"> Windows 3 Bed room</label><br>
+<input type="checkbox" id="Windows" name="Windows 3 Bedroom" value="Windows 3 Bedroom"> </td>
+<td> <label for="Windows"> Windows 3 Bed room</label><br>
+<input type="checkbox" id="Windows" name="Windows 3 Bedroom" value="Windows 3 Bedroom"> </td>
+		</tr>
+		<tr>
+			<td><label for="Clients"><br><br>Add House Clean </label><br><br>
+			 <label for="Windows">House Clean 3 Hours</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"> </td>
+			<td> <label for="Windows">House Clean 4 Hours</label><br>
+  <input type="checkbox" id="Windows" name="Clean" value="Car"> </td>
+			<td> <label for="Windows">Movers Clean 5 Hours</label><br>
+  <input type="checkbox" id="Windows" name="Clean" value="Car"> </td>
+			<td> <label for="Windows">Movers Clean 8 Hours</label><br>
+  <input type="checkbox" id="Windows" name="Clean" value="Movers Clean 8 Hours"> </td>
+		</tr>
+		<tr>
+			<td> <label for="Windows"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"> </td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"> </td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+		</tr>
+		<tr>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"> </td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"> </td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"> </td>
+		</tr>
+		<tr>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+		</tr>
+		<tr>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+			<td> <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Car"></td>
+		</tr>
+	</tbody>
+</table>
+
+
+</body>
+</html>

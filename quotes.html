@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>give-a-quotes-booking-area</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<script href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"  type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="/quotesTable/sc-style.css">
+
+
+</head>
+<style>
+
+/*
+#ffec64
+#ddd
+#777
+*/
+form {
+	flex
+	flex-direction: column;
+	align-content: space-between;
+
+	  margin: 30px, 20px;
+	  padding:10;
+		 padding-left:45px;
+		 padding-bottom:30px;
+		 font-family:sans-serif;
+
+     padding: 0, 0, 0, 3px;
+     width: 95%;
+     -moz-box-shadow: 0px 10px 14px -7px #fff6af;
+     -webkit-box-shadow: 0px 10px 14px -7px #fff6af;
+     box-shadow: 0px 10px 14px -7px #fff6af;
+     border-collapse:separate;
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+     background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+     background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+     background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+     background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+     background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+     background-color: #ffec64;
+     -moz-border-radius: 4px;
+     -webkit-border-radius: 4px;
+     border-radius: 4px;
+     border: 1px solid #ffaa22;
+     display: block;
+     cursor: pointer;
+     color: #333333;
+     font-family: arial;
+     font-size: 18px;
+     font-weight: bold;
+     padding: 6px 12px;
+     text-align: center;
+     text-shadow: 0px 1px 0px #ffee66
+	},
+table,input[type=checkbox] {
+					flex
+					flex-direction: row
+					align-content:stretch ;
+				   cursor: pointer;
+					   display: block;
+						 width: 0,auto;
+	    }
+	    input[type=checkbox]:before {
+	         content: "";
+					 width: 100px;
+				  padding: 15px 15px;
+				  margin: 8px 0;
+				  display: block;
+					height: 20px;
+					border: 1px solid #ccc;
+					 border-radius: 4px;
+					 box-sizing: border-box;
+	        background-color:#e9e9e9;
+	}
+	input[type=checkbox]:checked:before {
+	         content: "1";
+	         display: block;
+						width: 20px;
+	         height: 20px;
+	         background-color:#eee214;
+	}
+	    input[type=checkbox]:checked:after {
+	         content: "";
+	         display: block;
+	         width: 20px;
+	         height: 10px;
+	         /*border: solid white;*/
+	        	 border: 1px solid #ccc;
+						border-radius: 4px;
+						box-sizing: border-box;
+
+}
+/*  add-custom-css-styles-to-contact-form-7  */
+
+
+
+
+
+form-control submit:active {
+    position: relative;
+    top: 1px;
+}
+
+
+ .safesend {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4px;
+    margin: 0 auto
+}
+
+
+
+
+
+
+
+.QuoteButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+ input[type="text"],
+ input[type="email"],
+input[type="tel"],
+ input [type="radio"],
+ input [type="checkbox"],
+ select [type="select"],
+ textarea {
+    width: 100%;
+		display: block;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+
+
+.container{
+		flex
+		flex-direction: row
+		justify-content:space-between,center;
+		flex-wrap:  wrap ;
+		align-content: baseline ;
+		 align-items: stretch,center ;
+		 font-family: 'Open Sans Condensed', ;
+}
+
+.booking-area .booking-wrap {
+		flex,
+		justify-content:space-between;
+		padding: 39px 50px 20px 50px;
+		display:  block;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 79px 0px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap
+		font-family: 'Open Sans Condensed', ;
+table td {
+width: 100%;
+border-collapse: collapse;
+  padding: 30px;
+}
+
+
+
+
+</style>
+
+
+
+<body><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main  id="content">
+<div class="container" id="container" ><section>
+<form class="booking-area,booking-wrap"  action="">
+<table >
+	<tbody><tr><legend>
+    <th><title >Clients:Add New Client</title></th>
+		<th class="Phone" id="NewClient">Phone</th>
+	   <th id="NewClient">Address</th>
+    <th id="NewClient">Date</th>
+		<th id="NewClient">Email</th>
+  </legend></tr>
+  <tr>
+    <td><span><label for="Clients" class="fas fa-user-plus,.booking-area, .booking-wrap">Clients:Add New Client</label></span>
+		 <span> <input type="text" class="booking-area,booking-wrap " id="Clients" name="ClientName" value="Client Name" required="required"></span></td>
+		 <td><span><span><label for="Phone" class="fas fa-phone">Clients:Add New Phone</label></span>
+ 		 <span class="phoneNunber"> <input type="tel"  id="Phone" name="ClientName" value="022 9513575"  required="required"></span></td>
+
+
+    <td><span class="booking-area,booking-wrap "><address class="fas fa-address-book"><label class="booking-area,booking-wrap " for="Address">Add New Client Address</label>
+		  <input type="text" id="Address" name="ClientAddress" value="Client Address" required="required"></address></span></td>
+
+    <td><label for="Calendar"  class="fas fa-calendar-plus .booking-area, .booking-wrap">Job Start date:</label>
+			   <span class="phoneNunber"><input type="date" id="Calendar" name="Date"   value="2020-04-22" min="2019-12-21" max="3020-12-31"></span></td>
+
+			 <td><label class="booking-area,booking-wrap " id="" for="email"><label for="email" class="fas fa-at">Enter Clients email:</label>
+				 	<input type="email" class=".booking-area, .booking-wrap" id="email" size="30" required="required"> email:</label></td>
+</tr><br><br><br>
+
+	<br>	<tr><th>Windows Cleaning nunber of room</th>
+	<br><td><label class=" booking-area,  booking-wrap" id="" for="Windows Cleaning ">Windows Cleaning</label>
+			 <label class="booking-area,booking-wrap " booking-area,  booking-wrap" id="" for="Windows Cleaning ">1</label><br>
+	<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 1 Bedroom"> </td>
+			<td> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning" name="Windows" value="Windows 2 Bedroom">2</label>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 2 Bedroom">
+			</td>
+			<td> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning">3</label><br>
+  <input type="radio" id="Windows Cleaning" name="Windows" value="Windows 3 Bedroom"> </td>
+	<td> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning">4</label><br>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 4 Bedroom"> </td>
+<td> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning ">5</label><br>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 5 Bedroom"> </td>
+<td> <label  class="booking-area,booking-wrap " id=""  for="Windows Cleaning">6</label><br>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 6 Bedroom"> </td>
+<td> <label class="booking-area,booking-wrap " id="" for="Windows Cleaning">7</label><br>
+<input type="radio" id="Windows Cleaning" name="Windows" value="Windows 7 Bedroom"> </td>
+		</tr>
+		<tr><th>House Cleaning</th>
+			<td><label class="booking-area,booking-wrap " id="" for="House Clean">Add House Clean</label><br><br>
+				<label class="booking-area,booking-wrap " id="" for="House Clean">House Clean 2 Hours</label><br>
+   <input type="radio" id="House Clean" name="Clean" value="House Clean 2"> </td>
+			<td><label class="booking-area,booking-wrap " id="" for="House Clean">House Clean 3 Hours</label>
+			   <input type="radio" id="House Clean" name="Clean" value="House Clean 3"></td>
+			<td> <label class="booking-area,booking-wrap " id="" for="House Clean">House Clean 4 Hours</label><br>
+  <input type="radio" id="House Clean" name="Clean" value="House Clean 4"></td></tr>
+
+<tr><tr><th>Movers Clean</th></tr>
+<td><label for="House Clean">Movers Clean 5 Hours</label><br>
+  <input type="checkbox" class="fa fa-check" aria-hidden="true"  id="House Clean" name="Clean" value="House Clean 5"></td>
+
+			<td> <label for="House Clean">Movers Clean 8 Hours</label><br>
+  <input type="checkbox" id="House Clean" name="Clean" value="Movers Clean 8 Hours"> </td>
+
+	<td> <label class="booking-area,booking-wrap " id="" for="House Clean">Movers 8 Hours + Oven</label><br>
+<input type="checkbox" id="House Clean" name="Clean" value="Movers 8 Hours + Oven"> </td>
+</tr></tr>
+		<tr><th>Carpets Cleaning</th>
+		<td> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">1 room</label><br>
+  <input type="checkbox" id="Carpets cleaning" name="Clean" value="1 room"> </td>
+			<td> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning"> 2 room</label><br>
+  <input type="checkbox" id="Carpets cleaning" name="Clean" value="2 room"></td>
+			<td> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">3 room</label><br>
+  <input type="checkbox" id="Carpets cleaning" name="Carpets cleaning" value="3 room"></td>
+	<td><label class="booking-area,booking-wrap " id="" for="Carpets cleaning">4 room</label><br>
+<input type="checkbox" id="Carpets cleaning" name="Carpets cleaning" value="4 room"></td>
+	<td> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">5 room</label><br>
+<input type="checkbox" id="Carpets cleaning" name="Carpets cleaning" value="5 room"></td>
+<tr><th>Carpets Cleaning</th>
+<td>
+<label class="booking-area,booking-wrap " id="" for="Carpets cleaning"> 2 Seater Couch</label><br>
+<input type="checkbox" id="2 Seater Couch" name="3 Seater Couch" value="Clean"></td>
+
+<td> <label class="booking-area,booking-wrap " id="" for="Carpets cleaning"> 3 Seater Couch</label><br>
+<input type="checkbox" id="3 Seater Couch" name="3 Seater Couch" value="Clean"></td>
+
+<td> <label  for="Carpets cleaning"> 3 Seater Couch</label><br>
+<td> <label   for="Carpets cleaning"> 3 Seater Couch</label><br>
+<td> <label  for="Carpets cleaning">4 Seater Couch</label><br>
+<input type="checkbox" id="4 Seater Couch" name="4 Seater Couch" value="Clean"></td>
+
+	</tr></tr>
+		<tr><td><label for="lounges">lounges</label><br>
+			<select name="lounges" id="">
+			<option value="">1</option>
+			<option value="">2</option>
+
+		</select></td>
+			<td> <label for="Oven Clean">Oven Clean (Single)</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Clean"></td>
+			<td> <label for="Oven Clean">Oven Clean (Double)</label><br>
+  <input type="checkbox" id="Clean" name="Clean" value="Clean"> </td>
+		<tr><!--//Are we going to spot clean all the walls  true or false -->
+			<td> <label for="Wall">Wall per room</label><br>
+				<!--The number of rooms to be done></-->
+  <input type="checkbox" id="Wall per room" name="Clean" value="Clean">
+		<select name="" id="Wall"  min="1" max="8">
+			<option value="one rooms">1</option>
+		  <option value="two rooms">2</option>
+		  <option value="three rooms">3</option>
+		  <option value="four rooms">4</option>
+			 <option value="four rooms">5</option>
+			  <option value="four rooms">6</option>
+				 <option value="four rooms">7</option>
+				  <option value="four rooms">8</option>
+		</select></td>
+			<td><td> <label for="Kitchen">Kitchen</label><br>
+  <input type="checkbox" id="Kitchen" name="Clean" value="1 room"> </td>
+
+
+	<td> <label for="Kitchen">Kitchens+ Wall  + one rooms</label><br>
+<input type="checkbox" id="Clean" name="Clean" value="Clean"></td>
+<td> <label for="Kitchen">Kitchens +Wall  + two rooms</label><br>
+<input type="checkbox" id="Kitchen" name="Clean" value="Clean">
+<select name="rooms" id="Kitchen">
+	<option value="one rooms">1</option>
+  <option value="two rooms">2</option>
+  <option value="three rooms">3</option>
+  <option value="four rooms">4</option>
+	<option value="four rooms">5</option>
+	<option value="four rooms">6</option>
+	<option value="four rooms">7</option>
+	<option value="four rooms">8</option>
+	<option value="four rooms">9</option>
+	<option value="four rooms">10</option>
+
+</select></td>
+
+		</tr>
+		<tr>
+		<td><p>	Extras we offer
+		NoSale:	SuperClean:
+		Carpet Shampoo	Carpet Shampoo	Pre-shampoo Vaccuum  Deoderise	All included
+
+		Vaccuum		$15 	per room
+		Stain Removal (tough stains)		$20 	per stain
+		Carpet Protector		$35 	per room	</p></td>
+		</tr>
+
+	</tbody>
+</table>
+</form>
+<section></div>
+	<footer>
+		<li class=""></li>
+		<li class=""></li>
+		<li class=""></li>
+
+</footer>
+</main>
+</body>
+</html>
+</html>

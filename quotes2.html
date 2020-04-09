@@ -1,0 +1,345 @@
+<!-- /*
+		Template Name: give-a-quotes
+		Template Post Type: post, page, quotes;
+*/
+-->
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<!--[if it IE9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+<!DOCTYPE html5>
+<html lang="en">
+
+<head><!--start of Header -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>give-a-quotes-booking-area</title>
+	<script src="/quotesTable/"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"  type="text/javascript"></script>
+	<script href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"  type="text/javascript"></script>
+
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/quotesTable/sc-style.css">
+	<link href="/quotesTable/quf-style.css" rel="stylesheet" type="text/css" >
+
+</head><!--End of Header -->
+<body>
+
+<main  id="content">
+ <!--class="container" -->
+<div   id="warper" ><!--start of warper -->
+<form class="booking-area,booking-wrap"  action="">
+<fieldset><legend>Is this a commercial or residential booking?</legend>
+<ul style="list-style-type:none">
+  	<li>
+  		<a link href="#" class="residential" data-booking-type="residentialcleaning" value="residential" >Residential booking</a>
+
+  	</li><br>
+  	<li>
+  		<a link  href="#" class="commercial"  data-booking-type="commercialcleaning" value="commercial">Commercial booking</a>
+  	</li>
+  </ul>
+ <div class="booking"></div>
+</fieldset>
+
+		<fieldset><legend>Clients:Add New Client</legend><div>
+    <div data-title-type="clients" id="NewClientname">Name</div><output id="nameout" data-clientcontact-type="name" value=""> </output>
+		<div data-title-type="clients" class="Phone" id="NewClientPhone" >Phone</div><output id="Phoneout" data-clientcontact-type="Phone" value=""></output>
+	   <div data-title-type="clients" id="NewClientAddress">Address</div><output id="Addressout" data-clientcontact-type="Address" value=""> </output>
+    <div data-title-type="clients" id="NewClientDate" name="date" type="datetime-local">Date</div><output id="dateout"value=""> </output>
+		<div data-title-type="clients" id="NewClientEmail">Email</div><output id="emailout" data-clientcontact-type="email" value=""> </output>
+  </div></fieldset>
+
+  <fieldset><legend>New Client  Contact</legend>
+		<div id="IDclientinput">
+		<!--/The id value [ container ] must be unique To Do/-->
+    <br>
+		<div  id="IDClientContact1-2"  class="" >
+			<div data-form-control-type="newclientinput" > <!-- Add New Client Name -->
+			 	<label for="IDClients" class="fas fa-user-plus,.booking-area, .booking-wrap">Name *</label>
+			<input type="text"  id="IDClients" class="Name" onblur="#"  tabindex="1"  placeholder="Your name" data-form-control-type="newclientinput" required   autofocus></div>
+		<div data-form-control-type="newclientinput" >
+		  <!-- Clients:Add New Phone -->
+		 <label for ="IDcellphone">Phone *</label><br>
+		 <span ><input type="tel"  id="IDcellphone" class="phoneNunber, booking-area,booking-wrap, fas fa-phone"  onblur="#"  tabindex="2" placeholder="Your Phone Number" data-form-control-type="newclientinput" data-contact-type="cellphone" name="ClientPhone" value=""  required="required"></span></div>
+
+
+    <div data-form-control-type="newclientinput" class="container"  id="" ><span class="booking-area,booking-wrap "><address class="address,fas fa-address-book"><label class="booking-area,booking-wrap " for="IDAddress">Address *</label>
+		  <br><input type="text" id="IDAddress" class=""data-form-control-type="newclientinput" data-contact-type="address" tabindex="3" name="ClientAddress" placeholder="The properties address" value="" maxlength="675" required="required" multiple></address></span></div>
+
+    <div id="" class="phoneNunber"   data-form-control-type="newclientinput"  ><label for="Calendar"  class="fas fa-calendar-plus .booking-area, .booking-wrap">Job Start date:</label>
+			   <br><span class="#"><input id="IDCalendar" name="Date" tabindex="4" type="date" data-form-control-type="newclientinput"   value="2020-04-22" min="2020-1-1" max="2120-01-31"/></span>
+			 </div>
+
+			 <div data-form-control-type="newclientinput" class="container"  id="" ><label id=""  class="fas fa-at, booking-area,booking-wrap" for="email" >Email * </label>
+				 	<input type="email" id="email"  data-form-control-type="newclientinput" placeholder="Your Email Address" class=".booking-area, .booking-wrap" tabindex="5" data-contact-type="email" size="30" required="required" >
+				</div></div></div>
+</fieldset><br>
+
+	<br>
+
+		<div>
+			<fieldset><legend> House Clean</legend><div class="container"  id="" >
+				<label class="booking-area,booking-wrap " id="" for="House Clean" hidden >Choose 4 Option</label><br><br>
+
+				<div class="container"  id=""> <label class="booking-area,booking-wrap " id="" for="House Clean">2 Hours</label><br>
+   <input type="radio" id="" name="Clean" value="House Clean 2"> </div>
+			<div class="container"  id="" ><label class="booking-area,booking-wrap " id="" for="House Clean"> 3 Hours</label>
+			   <input type="radio" id="" name="Clean" value="House Clean 3"></div>
+			<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="House Clean"> 4 Hours
+ <input type="radio" id="" name="Clean" value="House Clean 4"></label><br></div></div>
+
+
+	<fieldset><legend>The number of rooms or Wall  to be done-option-1-8 </legend><div>
+		<!--  //The number of rooms to be done -->
+		<!--The number of Wall to be done <div data-booking-type="wallcleaning >-->
+		<label for="willNumberOfRooms">
+	<input  list="willNumberOfRooms"   name="numberOfRooms" type="text" placeholder="choose a selection" data-booking-type="wallcleaning">
+	<datalist  id="willNumberOfRooms" name="numberOfRooms" min="1" max="8">
+	<option value="one rooms">
+	<option value="two rooms">
+	<option value="three rooms">
+	<option value="four rooms">
+	 <option value="five rooms">
+		<option value="six rooms">
+		 <option value="seven rooms">
+			<option value="eight rooms">
+	</datalist></label></div>
+	</fieldset>
+
+</fieldset>
+	<fieldset><legend>lounges to be Clean</legend>
+		<div><div class="container"  id="" >
+			<label for="lounges" hidden>lounges</label><br>
+			<input list="lounges" type="text" name="lounges" placeholder="choose a selection" value="">
+			<datalist name="lounges" id="lounges">
+			<option value="lounges 1">
+			<option value="lounges 2">
+			<option value="lounges 3">
+
+		</datalist>
+	</div></div></fieldset>
+
+		<fieldset><legend>The number of Kitchen to be done-option-Kitchens +Wall +Dining rooms </legend><div>
+			<ul class="container"  id="" >
+				<li class="container"  id="" > <label for="Kitchen">Kitchen</label><br>
+					<input type="radio" id="" name="Clean" value="1 room"   data-booking-type="kitchencleaning">
+				</li>
+
+					<li class="container"  id="" > <label for="Kitchen">Kitchens+  One dining  rooms</label><br>
+							<input type="radio" id="Clean" name="Clean" value="Clean"  data-booking-type="kitchencleaning">
+						</li>
+							<!-- -->
+
+		</ul>
+		<!--The number of Kitchens to be done -->
+		<label for="IDKitchen">The number of Kitchens</label><br>
+		<datalist name="rooms" id="IDKitchen">
+		<option value="one Kitchens">1</option>
+		<option value="two Kitchens">2</option>
+		<option value="three Kitchens">3</option>
+		<option value="ten Kitchens">4</option>
+
+		</datalist></div>
+
+		<fieldset><legend>Oven-Option Single Or Double</legend><div>
+			<ul>
+			<li id="" class="container"   ><label for="Oven-Clean">Oven Clean (Single)</label><br>
+					<input type="radio" id="Oven-Clean" name="Clean" data-form-control-type="radio" value="Clean"></li>
+			<li id=""  class="container"  ><label for="Oven-Clean">Oven Clean (Double)</label><br>
+					<input type="radio" id="Oven-Clean" name="Clean" data-form-control-type="radio" value="Clean"></li>
+		</ul>
+
+		</div></fieldset>
+
+		</fieldset>
+
+<fieldset><legend>Movers Cleans</legend><div>
+
+
+	<!--The number of room Clean/Movers Clean to be done -->
+ <label for="Movers Clean">The number of room to be Clean</label><br>
+<datalist name="rooms" id="IDMoversClean">
+<option value="one room Clean">1</option>
+<option value="two room Clean">2</option>
+<option value="three room Clean">3</option>
+<option value="four room Clean">4</option>
+<option value="five room Clean">5</option>
+<option value="six room Clean">6</option>
+<option value="seven room Clean">7</option>
+</datalist>
+	 <!--Movers Clean 5 Hours -->
+<div class="container"  id="IDMoversClean5-1div" ><label for="DMoversClean5"> Movers Clean 5 Hours</label><br>
+  <input type="radio" class="fa fa-check"   id="IDMoversClean5" name="Clean" value="Movers Clean 5"></div>
+ <!-- Movers Clean 8 Hours-->
+			<div class="container"  id="" > <label for="HouseClean8">Movers Clean 8 Hours</label><br>
+  <input type="radio" id="IDHouseClean8" name="Clean" value="Movers Clean 8 Hours"></div>
+
+	<div class="container"  id=" " > <label class="booking-area,booking-wrap " id="" for="House Clean">Movers 8 Hours + Oven</label><br>
+<input type="radio" id="IDmoversoven" name="Clean" value="Movers 8 Hours + Oven">
+
+</div><br>
+<button >
+	yes rubbish needed to be taken away
+</button><br><br>
+<fieldset id="toggletherubbish" data-booking-type="toggletherubbish"><legend>Rubbish Removal &nbsp;&nbsp;<button>No rubbish needed to be taken away	</button></legend>
+	<div class="container" >
+	<label for="rubbish" hidden>how many trailer loads does it take</label>
+	<input list="rubbish" class="phoneNunber" placeholder="choose a selection" name="rubbish">
+	<datalist  name="rubbish" id="rubbish" >
+		<option value="1 loads">
+		<option value="2 loads">
+		<option value="3 loads">
+		<option value="4 loads">
+		<option value="5 loads">
+		<option value="6 loads">
+	</datalist>
+</div>
+</fieldset>
+
+</div>
+
+
+<fieldset>
+<ul>
+		<!--//Are we going to spot clean all the walls  true or false -->
+		<li class="container"  id="Wall" > <label for="Wall">Wall per room</label><br>
+		 <input type="radio" id="spotcleanwall " name="Clean" value="spotcleanwall"></li>
+		<li class="container" ><!--  //The number of rooms to be done -->
+				<label   for="fullClean">full clean all Wall </label><br>
+		<input type="radio" id="fullClean" name="Clean" value="fullClean"></li>
+	</ul>
+</fieldset>
+<fieldset><legend>bathrooms-option-1-4</legend>
+<!--How many bathrooms are we going to service by select-->
+<label for="bathrooms">
+	<input list="bathrooms" type="text"  placeholder="choose a selection">
+<datalist list="bathrooms" id="bathrooms"  name="bathrooms" >
+<option value="bathrooms 1">
+<option value="bathrooms 2">
+<option value="bathrooms 3">
+<option value="bathrooms 4">
+</datalist></label>
+</fieldset>
+
+</fieldset>
+<fieldset><legend>Carpets Cleaning</legend>
+		<div>
+		<div class="container"  id="" > <label class="booking-area,booking-wrap" id="" for="Carpets cleaning">1 room</label><br>
+  <input type="radio" id="" name="Clean" value="1 room"> </div>
+	 <!-- -->
+			<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="Carpets cleaning"> 2 room</label><br>
+  <input type="radio" id="" name="Clean" value="2 room"></div>
+	 <!-- -->
+			<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">3 room</label><br>
+  <input type="radio" id="" name="Carpets cleaning" value="3 room"></div>
+
+	<div class="container"  id="" ><label class="booking-area,booking-wrap " id="" for="Carpets cleaning">4 room</label><br>
+<input type="radio" id="" name="Carpets cleaning" value="4 room"></div>
+	<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">5 room</label><br>
+<input type="radio" id="" name="Carpets cleaning" value="5 room"></div>
+<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">6 room</label><br>
+<input type="radio" id="" name="Carpets cleaning" value="6 room"></div>
+<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">7 room</label><br>
+<input type="radio" id="" name="Carpets cleaning" value="7 room"></div>
+<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="Carpets cleaning">8 room</label><br>
+<input type="radio" id="" name="Carpets cleaning" value="8 room"></div>
+</div></fieldset>
+<fieldset><legend>Windows Cleaning nunber of room</legend>
+
+	<div class="container"  id="" ><label class="booking-area,booking-wrap" id="" for="Windows Cleaning "> </label>
+	 <label class="booking-area ,booking-wrap" id="booking-area,  booking-wrap" for="Windows Cleaning" >1</label>
+	 <br>
+<input type="radio" id="" name="Windows" value="Windows 1 Bedroom"></div>
+	<div class="container"  id="" >
+		 <label class="booking-area,booking-wrap" id="" for="Windows Cleaning" name="Windows" value="Windows 2 Bedroom">2</label>
+			<input type="radio" id="" name="Windows" value="Windows 2 Bedroom" data-booking-type="windowscleaning">
+			</div>
+	<div class="container"  id="" > <label class="booking-area,booking-wrap"
+		 id="" for="Windows Cleaning">3</label><br>
+<input type="radio" id="" name="Windows" value="Windows 3 Bedroom" data-booking-type="windowscleaning"> </div>
+<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="Windows Cleaning">4</label><br>
+<input type="radio" id="" name="Windows" value="Windows 4 Bedroom" data-booking-type="windowscleaning"> </div>
+<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="Windows Cleaning ">5</label><br>
+<input type="radio" id="" name="Windows" value="Windows 5 Bedroom" data-booking-type="windowscleaning"> </div>
+<div class="container"  id="" > <label  class="booking-area,booking-wrap " id=""  for="Windows Cleaning">6</label><br>
+<input type="radio" id="" name="Windows" value="Windows 6 Bedroom"data-booking-type="windowscleaning"></div>
+<div class="container"  id="" > <label class="booking-area,booking-wrap " id="" for="Windows Cleaning">7</label><br>
+<input type="radio" id="" name="Windows" value="Windows 7 Bedroom" data-booking-type="windowscleaning"> </div>
+</div>
+</fieldset>
+
+<!--<div>-->
+<fieldset><legend>Seater Couch cleaning</legend>
+<div class="container"  id="" >
+<!--   Couch cleaning 1 -->
+<label class="booking-area,booking-wrap " id="" for="SeaterCouchcleaning"> 1 Seater Couch</label><br>
+<input type="radio" id="SeaterCouchcleaning" name="SeaterCouch" checked data-seatercouch-type="SeaterCouch" value="Clean"></div>
+<!--Couch cleaning 2 -->
+<div class="container"   > <label class="booking-area,booking-wrap " id="" for="2SeaterCouch">2 Seater Couch</label><br>
+<input type="radio" id="2SeaterCouch" name="Couch" data-seatercouch-type="SeaterCouch" value="3SeaterCouch"></div>
+
+<!--Couch cleaning 3  -->
+<div class="container"  id="" > <label   for="CouchCleaning3">3 Seater Couch </label><br>
+	<input type="radio" id="Couchcleaning3" name="CouchCleaning" data-seatercouch-type="SeaterCouch" value="Clean3"></div>
+<!--Couch cleaning 4  -->
+<div class="container"  id="" ><label  for="Couchcleaning4">4 Seater Couch</label><br>
+<input type="radio" id="Couchcleaning4" name="CouchCleaning" data-seatercouch-type="SeaterCouch" value="Clean4"></div>
+
+<div class="container"  id="" > <label  for="CouchCleaning5"> 5 Seater Couch</label><br>
+<input type="radio" id="Couchcleaning5" name="CouchCleaning" data-seatercouch-type="SeaterCouch" value="Clean4">
+</div>
+</fieldset>
+<input class="QuoteButton" type="submit" value="Make the booking">
+
+</form>
+
+		<div><section>
+		<div class="container"  id="" >
+			<p>
+	<!--				Extras we offer
+		NoSale:	SuperClean:
+		Carpet Shampoo	Carpet Shampoo	Pre-shampoo Vaccuum  Deoderise	All included
+
+		Vaccuum		$15 	per room
+		Stain Removal (tough stains)		$20 	per stain
+		Carpet Protector		$35 	per room	</p></div>
+		-->
+	</p></div>
+
+	</section>
+
+
+
+</div>
+
+</div><!-- end of warper -->
+</main>
+<script>
+	// id="IDClients"
+	// id="nameout"
+
+function Client() {
+  var txtinput = document.getElementById("IDClients").value;
+  document.getElementById("nameout").innerHTML = txtinput;
+}
+//<!-- Script to  slideToggle() method -->
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("fieldset")[id="toggletherubbish" ].slideToggle();
+		});
+	});
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</body>
+</html>
