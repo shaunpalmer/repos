@@ -1,5 +1,4 @@
-# repos
-It's a custom post type template for doing quotes
+# It's a custom post type template for doing quotes
 
 
 
