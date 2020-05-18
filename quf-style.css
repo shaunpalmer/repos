@@ -3,7 +3,18 @@
 :root {
   /* background: <fieldset><legend>; */
 /*
-#ffec64
+
+Go for it! CSS Tricks' A Complete Guide to Flexbox provides strong reference documentation for all properties and values. Additionally, the flexbox docs at MDN are an excellent resource.
+
+Flexbox has a funny history: the flexbox spec changed significantly through three major revisions (Chris Coyier shares how to tell which flexbox you're looking at). The current version is supported by all modern browsers. If you need to support IE 10 however you can mix old and new flexbox for maximum browser support.
+
+We recommend looking at the Solved by Flexbox solution playground and work with the following tools to iterate and find your layout and syntax: Flexbox playground and Flexplorer.
+
+Flexbugs is another valuable resource to discover flexbox issues and cross-browser workarounds.
+
+more todo here
+site-color
+background #ffec64
 #ddd
 #777
 */}

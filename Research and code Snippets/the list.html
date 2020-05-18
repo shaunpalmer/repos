@@ -1,37 +1,43 @@
-<!-- /*
+<?php
+/*
 		Template Name: Give-a-quotes
 		Template Post Type: post, page, quotes;
 */
--->
-<!--[if IE 7]>
-<html class="ie ie7" lang="en-US">
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" lang="en-US">
-<![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
-<!--[if it IE9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-<!DOCTYPE html5>
-<html lang="en">
 
-<head><!--start of Header -->
+
+// <!--[if IE 7]>
+// <html class="ie ie7" lang="en-US">
+// <![endif]-->
+// <!--[if IE 8]>
+// <html class="ie ie8" lang="en-US">
+// <![endif]-->
+// <!--[if !(IE 7) | !(IE 8)  ]><!-->
+// <!--[if it IE9]>
+//       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+//     <![endif]--> ?>
+ <!DOCTYPE html5>
+// <html lang="en">
+
+<head> <!--start of Header -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>give-a-quotes-booking-area</title>
 	<script src="/quotesTable/"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<script href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"  type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"  type="text/javascript"></script>
-	<script href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"  type="text/javascript"></script>
+
+		<!-- Linking to the JavaScript file ||  Is it to../ go up  || ./ one down I can never remember! to check it-->
+ <script href="./JavaScript-link.js"  type="text/javascript"></script>
+
 
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/quotesTable/sc-style.css">
 	<link href="/quotesTable/quf-style.css" rel="stylesheet" type="text/css" >
 
-</head><!--End of Header -->
+</head> <!--End of Header -->
 <body>
 
 <main  id="content">
@@ -52,21 +58,38 @@
 </fieldset>
 
 		<fieldset><legend>Clients:Add New Client</legend><div>
-    <div data-title-type="clients" id="NewClientname">Name</div><output id="nameout" data-clientcontact-type="name" value=""> </output>
-		<div data-title-type="clients" class="Phone" id="NewClientPhone" >Phone</div><output id="Phoneout" data-clientcontact-type="Phone" value=""></output>
-	   <div data-title-type="clients" id="NewClientAddress">Address</div><output id="Addressout" data-clientcontact-type="Address" value=""> </output>
-    <div data-title-type="clients" id="NewClientDate" name="date" type="datetime-local">Date</div><output id="dateout"value=""> </output>
-		<div data-title-type="clients" id="NewClientEmail">Email</div><output id="emailout" data-clientcontact-type="email" value=""> </output>
+
+
+    <div data-title-type="clients" id="NewClientname">Name</div>Name here, add to localstorage immediately with js<output id="nameout" data-clientcontact-type="name" value="<?php /* the_field('clients'); /*AdvancedCustomFields*/ ?>">
+
+					<!--
+
+					Please comment all your changes
+
+				the object,	input type object ||  Also  use you select object  , in JavaScript,   the input tyre instantly put out put text(innerText =); straight from the form validated on the Fly to give feedback to the user and the add to localstorage immediately
+					This is very intent to output from the form under the name details below id="nameout" and data ID client and   IDClients should be used here JavaScript
+
+		let oninput ="document.getElementById('NewClientname').innerHTML =IDClients
+		output id="nameout" data-clientcontact-type="name" value=""> </output>
+		the id="IDClients" = id "nameout"  Id=(data-form-control-type="newclientinput");
+		data-title-type="clients"
+
+		attributes: NamedNodeMap [ data-title-type="clients", id="NewClientname" ]
+		<output id=\"nameout\" data-clientcontact-type=\"name\" value=\"\"> </output>" --> </output>
+		<div data-title-type="clients" class="Phone" id="NewClientPhone" >Phone- add to localstorage immediately with js</div><output id="Phoneout" data-clientcontact-type="Phone" value="<?php /* the_field('phone'); /*AdvancedCustomFields | && js add to localstorage here*/ ?>">add to localstorage immediately</output>
+	   <div data-title-type="clients" id="NewClientAddress">Address</div><output id="Addressout" data-clientcontact-type="Address" value="<?php /* the_field('address'); /*AdvancedCustomFields*/ ?>"> </output>
+    <div data-title-type="clients" id="NewClientDate" name="date" type="datetime-local">Date add to localstorage immediately with js</div><output id="dateout"value=""> </output>
+		<div data-title-type="clients" id="NewClientEmail">Email</div><output id="emailout" data-clientcontact-type="email" value="<?php /* the_field('email'); /*AdvancedCustomFields*/ ?>">add to localstorage immediately with js</output>
   </div></fieldset>
 
   <fieldset><legend>New Client  Contact</legend>
 		<div id="IDclientinput">
-		<!--/The id value [ container ] must be unique To Do/-->
+		<!--/The id value [ container needs fix! ] must be unique To Do/-->
     <br>
 		<div  id="IDClientContact1-2"  class="" >
 			<div data-form-control-type="newclientinput" > <!-- Add New Client Name -->
 			 	<label for="IDClients" class="fas fa-user-plus,.booking-area, .booking-wrap">Name *</label>
-			<input type="text"  id="IDClients" class="Name" onblur="#"  tabindex="1"  placeholder="Your name" data-form-control-type="newclientinput" required   autofocus></div>
+			<input type="text"  id="IDClients" class="Name" input="" onblur="#"  tabindex="1"  placeholder="Your name" data-form-control-type="newclientinput" required   autofocus></div>
 		<div data-form-control-type="newclientinput" >
 		  <!-- Clients:Add New Phone -->
 		 <label for ="IDcellphone">Phone *</label><br>
@@ -204,6 +227,15 @@
 		<option value="6 loads">
 	</datalist>
 </div>
+if( !input load 0 > === true){
+	<!-- Use include or require to pull in the rubbish PHP file -->
+	<!-- input  name="rubbish" But because it's going in WordPress you use content part-template()  it's a function in WordPress     https://developer.wordpress.org/reference/functions/get_template_part/
+get_template_part( string $slug, string $name = null )
+-->
+	<!--  'Booking-rubbish.php' -->
+	<!-- Please comment all your changes  -->
+};
+
 </fieldset>
 
 </div>
@@ -306,7 +338,7 @@
 		<div><section>
 		<div class="container"  id="" >
 			<p>
-	<!--				Extras we offer
+	<!--Todo 				Extras we offer
 		NoSale:	SuperClean:
 		Carpet Shampoo	Carpet Shampoo	Pre-shampoo Vaccuum  Deoderise	All included
 
