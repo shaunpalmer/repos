@@ -77,8 +77,8 @@ Inject the script element into the DOM using insertBefore() -->
 
 
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/quotesTable/sc-style.css">
-	<link href="/quotesTable/quf-style.css" rel="stylesheet" type="text/css" >
+<!--	<link rel="stylesheet" type="text/css" href="/quotesTable/sc-style.css">
+	<link href="/quotesTable/quf-style.css" rel="stylesheet" type="text/css" -->
 
 </head> <!--End of Header -->
 <body>
